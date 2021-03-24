@@ -1,6 +1,20 @@
+/**
+ * @file OP.c
+ * @author your name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-03-25
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include <stdio.h>
 #include "calculations.h"
-
+/**
+ * @brief Main function
+ * 
+ * @return int 
+ */
 
 int main(){
     complex_t a, b, res;
@@ -21,4 +35,5 @@ int main(){
         printf("Division  = %.1f +( %.1f)i \n", res.real, res.imaginary);
     return 0;
 }
+
 
