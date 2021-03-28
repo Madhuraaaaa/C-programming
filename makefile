@@ -3,4 +3,4 @@ all.exe:OP.c calculations.h
 
 run: all.exe
 	all.exe
- 
+	
