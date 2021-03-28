@@ -28,11 +28,8 @@ int main(){
     printf("Difference = %.1f +( %.1f)i \n", res.real, res.imaginary);
     res = mul(a, b);;
     printf("Multiplication = %.1f  +( %.1f)i \n", res.real, res.imaginary);
-    if (b.real == 0 && b.imaginary == 0)
-        printf("Division by 0 + 0i isn't allowed.");
-    else
-        res = div(a, b);
-        printf("Division  = %.1f +( %.1f)i \n", res.real, res.imaginary);
+    res = div(a, b);
+    printf("Division  = %.1f +( %.1f)i \n", res.real, res.imaginary);
     return 0;
 }
 

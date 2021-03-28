@@ -103,8 +103,14 @@ complex_t div(complex_t a, complex_t b){
     float x = a.real*b.real + a.imaginary*b.imaginary;
     float y = a.imaginary*b.real - a.real*b.imaginary;
     float z = b.real*b.real + b.imaginary*b.imaginary;
-    result.real = x/z;
-    result.imaginary = y/z;
+    if (z==0){
+        result.real = 0;
+        result.imaginary = 0;
+    }
+    else{
+        result.real = x/z;
+        result.imaginary = y/z;
+    }
     return (result);
 }
 /**
