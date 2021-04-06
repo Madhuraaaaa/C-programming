@@ -10,6 +10,7 @@
  */
 #include <stdio.h>
 #include "calculations.h"
+#include<crtdbg.h>
 /**
  * @brief Main function
  * 
@@ -30,6 +31,7 @@ int main(){
     printf("Multiplication = %.1f  +( %.1f)i \n", res.real, res.imaginary);
     res = div(a, b);
     printf("Division  = %.1f +( %.1f)i \n", res.real, res.imaginary);
+    _CrtDumpMemoryLeaks();
     return 0;
 }
 
